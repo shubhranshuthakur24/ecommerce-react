@@ -1,14 +1,3 @@
-
-<div align="center">
-
-[![Status](https://img.shields.io/badge/status-active-blue.svg)]()
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
-[![Langugae](https://img.shields.io/github/languages/top/miladsadeghi/hekto)]()
-
-</div>
-
----
-
 <p align="center"> ECommerce application built with React, Redux, Typescript, Firebase and Tailwind.
     <br>
 </p>
@@ -24,7 +13,7 @@
 
 ## 🧐 About <a name = "about"></a>
 
-hekto, a complete furniture e-commerce application. Wish list, card, entry, registration, login without creating an account, etc. It is also fully responsive to be used on all devices.
+a complete e-commerce application. Wish list, card, entry, registration, login without creating an account, etc. It is also fully responsive to be used on all devices.
 
 <details>
   <summary>Home Page</summary>
