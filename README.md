@@ -26,9 +26,6 @@
 
 hekto, a complete furniture e-commerce application. Wish list, card, entry, registration, login without creating an account, etc. It is also fully responsive to be used on all devices.
 
-## 🎥 Demo / Working <a name = "demo"></a>
-### [Hekto Demo](https://hekto.miladsdgh.ir)
-
 <details>
   <summary>Home Page</summary>
 
