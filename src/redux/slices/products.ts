@@ -8,12 +8,14 @@ export const getProducts = createAsyncThunk("product/getAll", async () => {
   return get(child(dbRef, `product/`))
     .then((snapshot) => {
       if (snapshot.exists()) {
-        return snapshot.val()
+        const val = snapshot.val();
+        // Firebase returns an object keyed by index; convert to array
+        return Array.isArray(val) ? val : Object.values(val);
       } else {
-        return "Nothing Found"
+        return [];
       }
-    }).catch((error) => {
-      return "Check Your Internet Connection."
+    }).catch((_error) => {
+      return [];
     });
 })
 

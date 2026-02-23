@@ -1,7 +1,7 @@
 import React, { FC, ReactElement, useState } from "react";
 import ManagementIMG from "../images/management-about.png";
 import ShopOffers from "./Home/ShopOffers";
-import { Pagination } from "swiper";
+import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import client1 from "../images/client-1.png";
 import client2 from "../images/client-2.png";
@@ -81,23 +81,20 @@ const About: FC = (): ReactElement => {
           <div className="flex items-center justify-center w-full mb-7 r">
             <img
               src={client1}
-              className={`w-[55px] h-[55px] duration-150 ease-in-out ${
-                commentSlide === 0 && "-mt-5"
-              }`}
+              className={`w-[55px] h-[55px] duration-150 ease-in-out ${commentSlide === 0 && "-mt-5"
+                }`}
               alt="Sam Bankman-Fried"
             />
             <img
               src={client2}
-              className={`w-[55px] h-[55px] duration-150 ease-in-out mx-7 ${
-                commentSlide === 1 && "-mt-5"
-              }`}
+              className={`w-[55px] h-[55px] duration-150 ease-in-out mx-7 ${commentSlide === 1 && "-mt-5"
+                }`}
               alt="Selina Gomez"
             />
             <img
               src={client3}
-              className={`w-[55px] h-[55px] duration-150 ease-in-out ${
-                commentSlide === 2 && "-mt-5"
-              }`}
+              className={`w-[55px] h-[55px] duration-150 ease-in-out ${commentSlide === 2 && "-mt-5"
+                }`}
               alt="Guy Gershon"
             />
           </div>

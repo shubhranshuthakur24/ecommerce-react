@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Pagination } from "swiper";
+import { Pagination } from "swiper/modules";
 import { SwiperSlide, Swiper } from "swiper/react";
 import { useAppSelector } from "../../redux/hook";
 import { Product } from "../../types/IProducts.interface";

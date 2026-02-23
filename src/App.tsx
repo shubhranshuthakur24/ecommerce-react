@@ -28,8 +28,14 @@ function App() {
         const userData = await getUserData(user!.uid);
         dispatch(GUEST_LOGGED_IN(userData));
       } else if (!user) {
-        const guestUser = await signInAnonymously(auth);
-        await createUserData(guestUser.user.uid, "guest", [], []);
+        try {
+          const guestUser = await signInAnonymously(auth);
+          await createUserData(guestUser.user.uid, "guest", [], []);
+        } catch (error: any) {
+          // Anonymous auth may be disabled in Firebase Console.
+          // The app still works for signed-in users.
+          console.warn("Anonymous sign-in unavailable:", error?.code);
+        }
       }
     });
   }, []);
