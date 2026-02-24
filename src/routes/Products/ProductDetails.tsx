@@ -83,7 +83,7 @@ const ProductDetails: FC = (): ReactElement | null => {
       }
     );
     if (product !== undefined && Products.length !== 0) {
-      document.title = `Hekto - ${product?.title}`;
+      document.title = `Ecom - ${product?.title}`;
       setProductDetails(product);
       if (product.colors) {
         setColor({
@@ -168,36 +168,34 @@ const ProductDetails: FC = (): ReactElement | null => {
               <div className="md:w-1/4  grid grid-cols-3 md:grid-cols-1 gap-2 h-full content-between">
                 {productDetails.imagesByColor
                   ? productDetails.imagesByColor[color!.name].map(
-                      (image: string, index: number) => (
-                        <img
-                          className={`rounded-[4px] duration-100 border-2 border-transparent opacity-70 ease-in-out ${
-                            mainImageIndex === index
-                              ? "selected-main-image"
-                              : ""
+                    (image: string, index: number) => (
+                      <img
+                        className={`rounded-[4px] duration-100 border-2 border-transparent opacity-70 ease-in-out ${mainImageIndex === index
+                            ? "selected-main-image"
+                            : ""
                           }`}
-                          key={image}
-                          src={image}
-                          alt={productDetails.title}
-                          onClick={() => setMainImageIndex(index)}
-                          style={{ borderColor: `${color!.code}` }}
-                        />
-                      )
+                        key={image}
+                        src={image}
+                        alt={productDetails.title}
+                        onClick={() => setMainImageIndex(index)}
+                        style={{ borderColor: `${color!.code}` }}
+                      />
                     )
+                  )
                   : productDetails.images.map(
-                      (image: string, index: number) => (
-                        <img
-                          className={`rounded-[4px] duration-100 border-2 border-transparent opacity-70 ease-in-out ${
-                            mainImageIndex === index
-                              ? "selected-main-image"
-                              : ""
+                    (image: string, index: number) => (
+                      <img
+                        className={`rounded-[4px] duration-100 border-2 border-transparent opacity-70 ease-in-out ${mainImageIndex === index
+                            ? "selected-main-image"
+                            : ""
                           }`}
-                          key={image}
-                          src={image}
-                          alt={productDetails.title}
-                          onClick={() => setMainImageIndex(index)}
-                        />
-                      )
-                    )}
+                        key={image}
+                        src={image}
+                        alt={productDetails.title}
+                        onClick={() => setMainImageIndex(index)}
+                      />
+                    )
+                  )}
               </div>
               <div className="w-full">
                 {productDetails.imagesByColor ? (
@@ -235,16 +233,14 @@ const ProductDetails: FC = (): ReactElement | null => {
               </div>
               <div className="flex mt-10">
                 <p
-                  className={`${
-                    !productDetails.discount && "hidden"
-                  } font-JosefinSans text-lg text-navy-blue font-semibold`}
+                  className={`${!productDetails.discount && "hidden"
+                    } font-JosefinSans text-lg text-navy-blue font-semibold`}
                 >
                   ${productDetails.discount}
                 </p>
                 <p
-                  className={`${
-                    productDetails.discount && "line-through text-pink-cc ml-3"
-                  } font-JosefinSans text-lg text-navy-blue font-semibold `}
+                  className={`${productDetails.discount && "line-through text-pink-cc ml-3"
+                    } font-JosefinSans text-lg text-navy-blue font-semibold `}
                 >
                   ${productDetails.price}
                 </p>
@@ -257,11 +253,10 @@ const ProductDetails: FC = (): ReactElement | null => {
                   {productDetails.colors.map((item: any) => (
                     <div className="relative mr-2" key={item.code}>
                       <div
-                        className={`w-6 h-2 rounded-2xl group cursor-pointer relative ${
-                          color!.name === item.name
+                        className={`w-6 h-2 rounded-2xl group cursor-pointer relative ${color!.name === item.name
                             ? "outline-2 outline outline-slate-400"
                             : ""
-                        }`}
+                          }`}
                         style={{ background: item.code }}
                         onClick={() =>
                           setColor({ name: item.name, code: item.code })
@@ -337,17 +332,15 @@ const ProductDetails: FC = (): ReactElement | null => {
         <div className="container mx-auto py-24">
           <div className="flex">
             <h6
-              className={`cursor-pointer font-JosefinSans text-2xl font-semibold text-navy-blue ${
-                toggleState === 1 ? "underline" : ""
-              } mr-5`}
+              className={`cursor-pointer font-JosefinSans text-2xl font-semibold text-navy-blue ${toggleState === 1 ? "underline" : ""
+                } mr-5`}
               onClick={(e) => toggleTab(1)}
             >
               Specification
             </h6>
             <h6
-              className={`cursor-pointer font-JosefinSans text-2xl font-semibold text-navy-blue ${
-                toggleState === 2 ? "underline" : ""
-              } mr-5`}
+              className={`cursor-pointer font-JosefinSans text-2xl font-semibold text-navy-blue ${toggleState === 2 ? "underline" : ""
+                } mr-5`}
               onClick={(e) => toggleTab(2)}
             >
               Comments
@@ -366,9 +359,8 @@ const ProductDetails: FC = (): ReactElement | null => {
               ))}
             </div>
             <div
-              className={` ${
-                toggleState === 2 ? "grid grid-cols-1 md:grid-cols-2" : "hidden"
-              }`}
+              className={` ${toggleState === 2 ? "grid grid-cols-1 md:grid-cols-2" : "hidden"
+                }`}
             >
               <div>
                 {guest ? (
@@ -443,9 +435,8 @@ const ProductDetails: FC = (): ReactElement | null => {
                   </div>
                 ) : (
                   <div
-                    className={`${
-                      guest ? "h-[300px]" : "h-full"
-                    } flex items-center justify-center`}
+                    className={`${guest ? "h-[300px]" : "h-full"
+                      } flex items-center justify-center`}
                   >
                     <p className="font-bold text-navy-blue text-xl ">
                       No comments yet, You want to be first?

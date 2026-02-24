@@ -14,7 +14,7 @@ import "../styles/swipers.css";
 
 const About: FC = (): ReactElement => {
   const [commentSlide, setCommentSlide] = useState<number>(1);
-  document.title = "Hekto - About Us";
+  document.title = "Ecom - About Us";
   const clientDetails = [
     {
       name: "Sam Bankman-Fried",

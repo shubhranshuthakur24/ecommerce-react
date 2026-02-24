@@ -15,7 +15,7 @@ const Checkout: React.FC<ICartProps> = ({
   cart,
   totalCartPrice,
 }): React.ReactElement => {
-  document.title = "Hekto - Checkout";
+  document.title = "Ecom - Checkout";
   const productTotalPrice = (id: string, price: string | undefined): string => {
     const cartItem = cart.find((item: any) => item.productID === id);
     return String((cartItem!.quantity * Number(price)).toFixed(2));
@@ -82,9 +82,8 @@ const Checkout: React.FC<ICartProps> = ({
                 <div className="w-full gap-6 flex">
                   <input
                     type="text"
-                    className={`w-1/2 py-3 bg-[#F8F8FD] border-b-2 border-[#BFC6E0] px-2 focus:bg-[#fff] outline-none duration-300 ease-in-out ${
-                      errors.firstName ? "border-red-500" : "border-[#BFC6E0]"
-                    }`}
+                    className={`w-1/2 py-3 bg-[#F8F8FD] border-b-2 border-[#BFC6E0] px-2 focus:bg-[#fff] outline-none duration-300 ease-in-out ${errors.firstName ? "border-red-500" : "border-[#BFC6E0]"
+                      }`}
                     placeholder="First name (optional)"
                     title={`${errors.firstName || ""}`}
                     id="firstName"
@@ -93,9 +92,8 @@ const Checkout: React.FC<ICartProps> = ({
                   />
                   <input
                     type="text"
-                    className={`w-1/2 py-3 bg-[#F8F8FD] border-b-2 border-[#BFC6E0] px-2 focus:bg-[#fff] outline-none duration-300 ease-in-out ${
-                      errors.lastName ? "border-red-500" : "border-[#BFC6E0]"
-                    }`}
+                    className={`w-1/2 py-3 bg-[#F8F8FD] border-b-2 border-[#BFC6E0] px-2 focus:bg-[#fff] outline-none duration-300 ease-in-out ${errors.lastName ? "border-red-500" : "border-[#BFC6E0]"
+                      }`}
                     placeholder="Last name"
                     title={`${errors.lastName || ""}`}
                     id="lastName"
@@ -106,9 +104,8 @@ const Checkout: React.FC<ICartProps> = ({
                 <input
                   type="text"
                   placeholder="Address"
-                  className={`w-full my-4 py-3 bg-[#F8F8FD] border-b-2 border-[#BFC6E0] px-2 focus:bg-[#fff] outline-none duration-300 ease-in-out ${
-                    errors.address ? "border-red-500" : "border-[#BFC6E0]"
-                  }`}
+                  className={`w-full my-4 py-3 bg-[#F8F8FD] border-b-2 border-[#BFC6E0] px-2 focus:bg-[#fff] outline-none duration-300 ease-in-out ${errors.address ? "border-red-500" : "border-[#BFC6E0]"
+                    }`}
                   title={`${errors.address || ""}`}
                   id="address"
                   value={values.address}
@@ -117,9 +114,8 @@ const Checkout: React.FC<ICartProps> = ({
                 <input
                   type="text"
                   placeholder="Apartment,suite,e.t.c (optional)"
-                  className={`w-full my-4 py-3 bg-[#F8F8FD] border-b-2 border-[#BFC6E0] px-2 focus:bg-[#fff] outline-none duration-300 ease-in-out ${
-                    errors.apt ? "border-red-500" : "border-[#BFC6E0]"
-                  }`}
+                  className={`w-full my-4 py-3 bg-[#F8F8FD] border-b-2 border-[#BFC6E0] px-2 focus:bg-[#fff] outline-none duration-300 ease-in-out ${errors.apt ? "border-red-500" : "border-[#BFC6E0]"
+                    }`}
                   title={`${errors.apt || ""}`}
                   id="apt"
                   value={values.apt}
@@ -128,9 +124,8 @@ const Checkout: React.FC<ICartProps> = ({
                 <input
                   type="text"
                   placeholder="City"
-                  className={`w-full py-3 bg-[#F8F8FD] border-b-2 border-[#BFC6E0] px-2 focus:bg-[#fff] outline-none duration-300  ease-in-out my-4 ${
-                    errors.city ? "border-red-500" : "border-[#BFC6E0]"
-                  }`}
+                  className={`w-full py-3 bg-[#F8F8FD] border-b-2 border-[#BFC6E0] px-2 focus:bg-[#fff] outline-none duration-300  ease-in-out my-4 ${errors.city ? "border-red-500" : "border-[#BFC6E0]"
+                    }`}
                   id="city"
                   title={`${errors.city || ""}`}
                   value={values.city}
@@ -139,9 +134,8 @@ const Checkout: React.FC<ICartProps> = ({
                 <div className="w-full gap-6 flex my-4">
                   <input
                     type="text"
-                    className={`w-1/2 py-3 bg-[#F8F8FD] border-b-2 border-[#BFC6E0] px-2 focus:bg-[#fff] outline-none duration-300 ease-in-out ${
-                      errors.state ? "border-red-500" : "border-[#BFC6E0]"
-                    }`}
+                    className={`w-1/2 py-3 bg-[#F8F8FD] border-b-2 border-[#BFC6E0] px-2 focus:bg-[#fff] outline-none duration-300 ease-in-out ${errors.state ? "border-red-500" : "border-[#BFC6E0]"
+                      }`}
                     placeholder="State"
                     id="state"
                     title={`${errors.state || ""}`}
@@ -150,9 +144,8 @@ const Checkout: React.FC<ICartProps> = ({
                   />
                   <input
                     type="number"
-                    className={`w-1/2 py-3 bg-[#F8F8FD] border-b-2 border-[#BFC6E0] px-2 focus:bg-[#fff] outline-none duration-300 ease-in-out ${
-                      errors.postalCode ? "border-red-500" : "border-[#BFC6E0]"
-                    }`}
+                    className={`w-1/2 py-3 bg-[#F8F8FD] border-b-2 border-[#BFC6E0] px-2 focus:bg-[#fff] outline-none duration-300 ease-in-out ${errors.postalCode ? "border-red-500" : "border-[#BFC6E0]"
+                      }`}
                     placeholder="Postal code"
                     id="postalCode"
                     title={`${errors.postalCode || ""}`}

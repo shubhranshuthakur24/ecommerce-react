@@ -17,7 +17,7 @@ import { TProductListSort } from "../../types/public.types";
 import { motion } from "framer-motion";
 
 const ProductsList = () => {
-  document.title = "Hekto - Products";
+  document.title = "Ecom - Products";
   const [searchParams, setSearchParams] = useSearchParams();
   const { products } = useAppSelector((state) => state.product);
   const [searchText, setSearchText] = useState<any>({
@@ -49,7 +49,7 @@ const ProductsList = () => {
       const getData = setTimeout(() => {
         dispatch(regular({ products, search: searchText.text }));
         setSearchParams({ search: String(searchText.text) });
-        document.title = `Hekto - ${searchText.text}`;
+        document.title = `Ecom - ${searchText.text}`;
         setSort("regular");
       }, 450);
 
@@ -195,16 +195,14 @@ const ProductsList = () => {
                     </div>
                     <div className="flex mt-2">
                       <p
-                        className={`${
-                          !product.discount && "hidden"
-                        } font-JosefinSans text-lg text-navy-blue font-semibold mr-5`}
+                        className={`${!product.discount && "hidden"
+                          } font-JosefinSans text-lg text-navy-blue font-semibold mr-5`}
                       >
                         ${product.discount}
                       </p>
                       <p
-                        className={`${
-                          product.discount && "line-through text-pink-cc"
-                        } font-JosefinSans text-lg text-navy-blue font-semibold `}
+                        className={`${product.discount && "line-through text-pink-cc"
+                          } font-JosefinSans text-lg text-navy-blue font-semibold `}
                       >
                         ${product.price}
                       </p>

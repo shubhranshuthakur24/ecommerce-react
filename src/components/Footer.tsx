@@ -12,7 +12,7 @@ const Footer: FC = (): ReactElement => {
             <div className="w-full">
               <ul>
                 <li className="mb-5 font-JosefinSans text-4xl text-black font-bold ">
-                  Hekto
+                  Ecom
                 </li>
                 <li className="relative mb-5">
                   <input

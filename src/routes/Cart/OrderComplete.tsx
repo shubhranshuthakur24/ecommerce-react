@@ -7,7 +7,7 @@ import Logos from "../Home/Logos";
 import { motion } from "framer-motion";
 
 const OrderComplete: FC = (): ReactElement => {
-  document.title = "Hekto - Order Complete";
+  document.title = "Ecom - Order Complete";
   return (
     <motion.div
       initial={{ opacity: 0 }}

@@ -77,7 +77,7 @@ a complete e-commerce application. Wish list, card, entry, registration, login w
 
 ## 🎈 Usage <a name = "usage"></a>
 
-You can only use hekto in university projects! Otherwise, I don't think it will work for you.
+You can only use Ecom in university projects! Otherwise, I don't think it will work for you.
 
 ## 🏁 Getting Started <a name = "#getting_started"></a>
 

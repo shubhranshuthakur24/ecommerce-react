@@ -22,7 +22,7 @@ const Cart: FC<ICartProps> = ({
 }): ReactElement => {
   const { uid, guest } = useAppSelector((state) => state.user);
   const dispatch = useAppDispatch();
-  document.title = "Hekto - Cart";
+  document.title = "Ecom - Cart";
 
   const clearCart = async (e: any, uid: string) => {
     e.currentTarget.disabled = true;
@@ -82,8 +82,8 @@ const Cart: FC<ICartProps> = ({
                             src={
                               product.imagesByColor
                                 ? product.imagesByColor[
-                                    product.colors!![0].name
-                                  ][0]
+                                product.colors!![0].name
+                                ][0]
                                 : product.images[0]
                             }
                             alt={product.title}
@@ -167,9 +167,8 @@ const Cart: FC<ICartProps> = ({
                       </td>
                       <td className="py-4 px-6">
                         <h2
-                          className={`${
-                            product.price ? "text-navy-blue" : "text-pink-cc"
-                          } font-JosefinSans`}
+                          className={`${product.price ? "text-navy-blue" : "text-pink-cc"
+                            } font-JosefinSans`}
                         >
                           $
                           {productTotalPrice(

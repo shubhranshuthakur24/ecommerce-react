@@ -12,7 +12,7 @@ import UpdateBanner from "./UpdateBanner";
 import { motion } from "framer-motion";
 
 const Home = () => {
-  document.title = "Hekto";
+  document.title = "Ecom";
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -26,7 +26,7 @@ const Home = () => {
       <FeaturedProducts />
       <LatestProducts />
       <ShopOffers
-        sectionTitle="What's Hekto Offer?"
+        sectionTitle="What's Ecom Offer?"
         classes="font-JosefinSans text-center text-[#1A0B5B] text-[42px] font-bold mb-20"
       />
       <UniqueFurniture />

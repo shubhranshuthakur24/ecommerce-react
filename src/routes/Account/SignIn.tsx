@@ -12,7 +12,7 @@ import Logos from "../Home/Logos";
 import { motion } from "framer-motion";
 
 const SignIn: FC = (): ReactElement => {
-  document.title = "Hekto - Sign In";
+  document.title = "Ecom - Sign In";
   const dispatch = useAppDispatch();
 
   const {
@@ -98,9 +98,8 @@ const SignIn: FC = (): ReactElement => {
             <p className="text-red-600 text-xs">{errors.email}</p>
           </div>
           <input
-            className={`form-input ${
-              errors.email && touched.email && "border-red-600"
-            }`}
+            className={`form-input ${errors.email && touched.email && "border-red-600"
+              }`}
             type="email"
             value={values.email}
             id="email"
@@ -112,9 +111,8 @@ const SignIn: FC = (): ReactElement => {
             <p className="text-red-600 text-xs">{errors.password}</p>
           </div>
           <input
-            className={`form-input ${
-              errors.password && touched.password && "border-red-600"
-            }`}
+            className={`form-input ${errors.password && touched.password && "border-red-600"
+              }`}
             type="password"
             value={values.password}
             id="password"

@@ -11,7 +11,7 @@ import { addToCart, removeFromWishlist } from "../redux/slices/user";
 import { motion } from "framer-motion";
 
 const Wishlist = () => {
-  document.title = "Hekto - Wishlist";
+  document.title = "Ecom - Wishlist";
   const { uid } = useAppSelector((state) => state.user);
   const { products } = useAppSelector((state) => state.product);
   const [wishlistProducts, setWishlistProducts] = useState<any>();

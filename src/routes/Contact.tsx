@@ -5,7 +5,7 @@ import ContactUsIMG from "../images/contact-us.png";
 import { motion } from "framer-motion";
 
 const Contact: FC = (): ReactElement => {
-  document.title = "Hekto - Contact Us";
+  document.title = "Ecom - Contact Us";
   return (
     <motion.div
       initial={{ opacity: 0 }}

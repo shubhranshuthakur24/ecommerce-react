@@ -4,7 +4,7 @@ import NotFoundIMG from "../images/404.png";
 import Logos from "./Home/Logos";
 
 const NotFound: FC = (): ReactElement => {
-  document.title = "Hekto - 404";
+  document.title = "Ecom - 404";
   return (
     <div>
       <div className="bg-[#F6F5FF] py-16">

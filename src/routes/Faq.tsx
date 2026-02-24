@@ -3,7 +3,7 @@ import Logos from "./Home/Logos";
 import { motion } from "framer-motion";
 
 const Faq: FC = (): ReactElement => {
-  document.title = "Hekto - FAQ";
+  document.title = "Ecom - FAQ";
   const informations = [
     {
       title: "How can I track my order?",

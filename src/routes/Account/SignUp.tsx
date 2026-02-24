@@ -9,7 +9,7 @@ import { signUp } from "../../redux/slices/user";
 import { motion } from "framer-motion";
 
 const SignUp: FC = (): ReactElement => {
-  document.title = "Hekto - Sign Up";
+  document.title = "Ecom - Sign Up";
   const {
     values,
     handleChange,
@@ -64,9 +64,8 @@ const SignUp: FC = (): ReactElement => {
             <p className="text-red-600 text-xs">{errors.email}</p>
           </div>
           <input
-            className={`form-input ${
-              errors.email && touched.email && "border-red-600"
-            }`}
+            className={`form-input ${errors.email && touched.email && "border-red-600"
+              }`}
             type="email"
             id="email"
             value={values.email}
@@ -79,9 +78,8 @@ const SignUp: FC = (): ReactElement => {
             <p className="text-red-600 text-xs">{errors.userName}</p>
           </div>
           <input
-            className={`form-input ${
-              errors.userName && touched.userName && "border-red-600"
-            }`}
+            className={`form-input ${errors.userName && touched.userName && "border-red-600"
+              }`}
             type="text"
             id="userName"
             value={values.userName}
@@ -94,9 +92,8 @@ const SignUp: FC = (): ReactElement => {
             <p className="text-red-600 text-xs">{errors.password}</p>
           </div>
           <input
-            className={`form-input ${
-              errors.password && touched.password && "border-red-600"
-            }`}
+            className={`form-input ${errors.password && touched.password && "border-red-600"
+              }`}
             type="password"
             id="password"
             value={values.password}
@@ -109,9 +106,8 @@ const SignUp: FC = (): ReactElement => {
             <p className="text-red-600 text-xs">{errors.cPassword}</p>
           </div>
           <input
-            className={`form-input ${
-              errors.cPassword && touched.cPassword && "border-red-600"
-            }`}
+            className={`form-input ${errors.cPassword && touched.cPassword && "border-red-600"
+              }`}
             type="password"
             id="cPassword"
             value={values.cPassword}
@@ -133,11 +129,10 @@ const SignUp: FC = (): ReactElement => {
             >
               I agree with the{" "}
               <span
-                className={`${
-                  errors.acceptTerms || touched.acceptTerms
+                className={`${errors.acceptTerms || touched.acceptTerms
                     ? "text-red-600"
                     : "text-blue-800"
-                }`}
+                  }`}
               >
                 terms and conditions
               </span>

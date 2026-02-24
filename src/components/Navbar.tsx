@@ -69,7 +69,7 @@ const Navbar: FC = (): ReactElement => {
         <div className="container mx-auto">
           <div className="items-center py-[13.5px] grid grid-cols-12">
             <h1 className="font-JosefinSans text-[#0D0E43] font-bold text-[34px] sm:col-span-4 md:col-span-3 col-span-12 text-center sm:text-left">
-              Hekto
+              Ecom
             </h1>
             <ul className="flex font-Lato text-[#0D0E43] items-center sm:col-span-8 md:col-span-6  sm:justify-self-end md:justify-self-start flex-wrap col-span-12 mb-4 sm:mb-0 justify-center sm:justify-start">
               <li className="mr-9">
